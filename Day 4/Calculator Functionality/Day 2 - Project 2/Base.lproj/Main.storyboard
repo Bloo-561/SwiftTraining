@@ -1,110 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R3G-CZ-R3c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="YlK-lh-yHW">
-            <objects>
-                <viewController id="R3G-CZ-R3c" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qQL-5S-ZQm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-Iu-a1O">
-                                <rect key="frame" x="0.0" y="0.0" width="401" height="128"/>
-                                <color key="backgroundColor" systemColor="tintColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URM-HW-cio">
-                                <rect key="frame" x="16" y="246" width="142" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-9Y-TI6">
-                                <rect key="frame" x="75" y="374" width="243" height="75"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="hcu-y5-bgC"/>
-                                </constraints>
-                                <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88D-Il-WqC">
-                                <rect key="frame" x="75" y="471" width="243" height="75"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="mXh-HR-RXF"/>
-                                </constraints>
-                                <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Forget Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5p-YC-QSl">
-                                <rect key="frame" x="144" y="579" width="104" height="15"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcA-CI-L9N">
-                                <rect key="frame" x="154.66666666666666" y="652" width="83.666666666666657" height="34.333333333333371"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="SIGN IN">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-VW-pec">
-                                <rect key="frame" x="108" y="783" width="185" height="15"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRR-oQ-m2K">
-                                <rect key="frame" x="16" y="293" width="83" height="39"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wxF-PJ-HjG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="N3P-Iu-a1O" secondAttribute="trailing" constant="-24" id="09u-10-sTn"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="centerX" secondItem="n5p-YC-QSl" secondAttribute="centerX" id="4MO-gS-Qbf"/>
-                            <constraint firstItem="vRR-oQ-m2K" firstAttribute="leading" secondItem="qQL-5S-ZQm" secondAttribute="leadingMargin" id="69x-ch-bKz"/>
-                            <constraint firstItem="n5p-YC-QSl" firstAttribute="leading" secondItem="wxF-PJ-HjG" secondAttribute="leading" constant="144" id="6H1-Bn-D5B"/>
-                            <constraint firstItem="wxF-PJ-HjG" firstAttribute="bottom" secondItem="WD2-VW-pec" secondAttribute="bottom" constant="20" id="C79-zW-Wzd"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="top" secondItem="qQL-5S-ZQm" secondAttribute="top" constant="374" id="DfT-y3-tyd"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="centerX" secondItem="qQL-5S-ZQm" secondAttribute="centerX" id="H28-zw-dru"/>
-                            <constraint firstItem="wxF-PJ-HjG" firstAttribute="top" secondItem="N3P-Iu-a1O" secondAttribute="top" constant="59" id="KkS-Bh-rDr"/>
-                            <constraint firstItem="N3P-Iu-a1O" firstAttribute="centerX" secondItem="WD2-VW-pec" secondAttribute="centerX" id="LWE-D5-eWh"/>
-                            <constraint firstAttribute="bottom" secondItem="N3P-Iu-a1O" secondAttribute="bottom" constant="724" id="Lpu-2W-x6G"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="trailing" secondItem="88D-Il-WqC" secondAttribute="trailing" id="Of6-S6-Dm8"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="top" secondItem="vRR-oQ-m2K" secondAttribute="bottom" constant="42" id="Sqb-l1-ImE"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="leading" secondItem="88D-Il-WqC" secondAttribute="leading" id="U6X-Cd-zcg"/>
-                            <constraint firstItem="vRR-oQ-m2K" firstAttribute="leading" secondItem="URM-HW-cio" secondAttribute="leading" id="XHE-1o-l4N"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="leading" secondItem="wxF-PJ-HjG" secondAttribute="leading" constant="75" id="XoE-EG-Gtp"/>
-                            <constraint firstItem="WD2-VW-pec" firstAttribute="top" secondItem="zcA-CI-L9N" secondAttribute="bottom" constant="96.666666666666629" id="XzH-1p-NmF"/>
-                            <constraint firstItem="88D-Il-WqC" firstAttribute="top" secondItem="iRO-9Y-TI6" secondAttribute="bottom" constant="22" id="ZyL-K8-gkJ"/>
-                            <constraint firstItem="iRO-9Y-TI6" firstAttribute="centerX" secondItem="zcA-CI-L9N" secondAttribute="centerX" id="lJP-5g-cP9"/>
-                            <constraint firstItem="N3P-Iu-a1O" firstAttribute="leading" secondItem="wxF-PJ-HjG" secondAttribute="leading" id="oDD-i3-k9V"/>
-                            <constraint firstItem="n5p-YC-QSl" firstAttribute="top" secondItem="88D-Il-WqC" secondAttribute="bottom" constant="33" id="rjw-ay-3AQ"/>
-                            <constraint firstItem="vRR-oQ-m2K" firstAttribute="top" secondItem="URM-HW-cio" secondAttribute="bottom" constant="8" symbolic="YES" id="vxZ-IP-elB"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JVH-vJ-aVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-998" y="-3"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -129,7 +32,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Isr-yI-W7s" firstAttribute="leading" secondItem="KNv-o6-TdX" secondAttribute="leading" id="ATE-Kl-9xX"/>
                                     <constraint firstItem="Isr-yI-W7s" firstAttribute="height" secondItem="ma5-b1-wsB" secondAttribute="height" id="Xfn-we-fcv"/>
@@ -374,21 +277,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -397,12 +285,6 @@
         </systemColor>
         <systemColor name="tableSeparatorDarkColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="viewFlipsideBackgroundColor">
-            <color red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
