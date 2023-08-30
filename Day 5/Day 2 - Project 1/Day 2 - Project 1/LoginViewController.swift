@@ -14,11 +14,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         guard let userName = userNameTextField.text else {
-            print("user name error")
             return
         }
         guard let password = passwordTextField.text else {
-            print("password error")
             return
         }
         
