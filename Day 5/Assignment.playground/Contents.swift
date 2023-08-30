@@ -4,7 +4,20 @@ import UIKit
 // Theory
 
 // 1. What is protocol delegate pattern, write some samle code to explin?
-    // Answer: 
+    // Answer: Protocol delegate is used for one class to communicate with another using a object of the prototol.
+
+    // porotocol StudentDelegate {
+    // func test()
+    //  }
+
+    // func test() {
+    //
+    // }
+
+    // class Student {
+    //  var delegate : StudentDelegate?
+    // }
+
 
 // 2. Steps to create tableView
     // Answer:
@@ -17,7 +30,7 @@ import UIKit
         // Step 7 : In table view make controller object with datasource protocol
 
 // 3. What is use of storyboard refrence?
-    // Answer:
+    // Answer: Storyboard reference is used to refer a storyboard to make the storyboard cleaner and more organized.
 
 // 4. What is segue?
     // Answer: A segue is the transition between two view controllers in a storyboard file and is represented by visual connectors
