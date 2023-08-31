@@ -26,13 +26,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt index: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "studentListCell", for: index) as? studentListCell
-        cell?.nameLabel.text = students[index.row].name
-        cell?.dobLabel.text = students[index.row].dob
-        cell?.emailLabel.text = students[index.row].email
-        cell?.avatarImage.image = students[index.row].avatarImage
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "studentListCell", for: index) as? studentListCell else {
+            return UITableViewCell()
+        }
+        cell.nameLabel.text = students[index.row].name
+        cell.dobLabel.text = students[index.row].dob
+        cell.emailLabel.text = students[index.row].email
+        cell.avatarImage.image = students[index.row].avatarImage
         
-        return cell ?? UITableViewCell()
+        return UITableViewCell()
     }
     
     func insertStudent() {
