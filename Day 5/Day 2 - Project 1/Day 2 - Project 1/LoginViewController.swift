@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginAction(_ sender: Any) {
-        guard let userName = userNameTextField.text else {
+        guard let userName = userNameTextField.text else { 
             return
         }
         guard let password = passwordTextField.text else {
