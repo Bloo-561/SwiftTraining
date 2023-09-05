@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dOq-Tw-IdV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="N3x-1H-xsg">
+            <objects>
+                <viewController id="dOq-Tw-IdV" customClass="SettingsViewController" customModule="TrainingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8F-QB-FJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-iF-Cim">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingTableCell" id="EoO-34-kpG" customClass="SettingsTableViewCell" customModule="TrainingProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="20.666666030883789"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EoO-34-kpG" id="YuZ-0e-ZkS">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="20.666666030883789"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1v-3I-wv1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="20.666666666666668"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k1v-3I-wv1" firstAttribute="leading" secondItem="YuZ-0e-ZkS" secondAttribute="leading" id="kAj-fk-ICy"/>
+                                                <constraint firstAttribute="trailing" secondItem="k1v-3I-wv1" secondAttribute="trailing" id="p7z-eu-Y7X"/>
+                                                <constraint firstAttribute="bottom" secondItem="k1v-3I-wv1" secondAttribute="bottom" id="rVS-Cs-hn9"/>
+                                                <constraint firstItem="k1v-3I-wv1" firstAttribute="top" secondItem="YuZ-0e-ZkS" secondAttribute="top" id="wlf-sK-4js"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="k1v-3I-wv1" id="maW-33-PK5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3v8-ka-ZSS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u1u-iF-Cim" firstAttribute="leading" secondItem="3v8-ka-ZSS" secondAttribute="leading" id="1Kt-Kh-7a0"/>
+                            <constraint firstItem="3v8-ka-ZSS" firstAttribute="trailing" secondItem="u1u-iF-Cim" secondAttribute="trailing" id="5cl-ua-XXp"/>
+                            <constraint firstItem="3v8-ka-ZSS" firstAttribute="bottom" secondItem="u1u-iF-Cim" secondAttribute="bottom" id="O2b-AD-ctO"/>
+                            <constraint firstItem="u1u-iF-Cim" firstAttribute="top" secondItem="3v8-ka-ZSS" secondAttribute="top" id="zVk-CX-tHP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="EZU-Jp-aBa"/>
+                    <connections>
+                        <outlet property="tableView" destination="u1u-iF-Cim" id="cV4-Yu-AJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23r-Ke-dc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866.4122137404579" y="198.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

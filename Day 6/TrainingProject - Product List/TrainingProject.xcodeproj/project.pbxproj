@@ -11,9 +11,6 @@
 		0213BA672AA257F600085027 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA662AA257F600085027 /* ProductsTableViewCell.swift */; };
 		0213BA692AA4DB9F00085027 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA682AA4DB9F00085027 /* Products.swift */; };
 		0213BA6C2AA55D5B00085027 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 0213BA6B2AA55D5B00085027 /* Products.json */; };
-		0213BA712AA75A0800085027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA702AA75A0800085027 /* SettingsViewController.swift */; };
-		0213BA772AA75A4700085027 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213BA752AA75A4700085027 /* Settings.storyboard */; };
-		0213BA7B2AA75FA000085027 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA7A2AA75FA000085027 /* SettingsTableViewCell.swift */; };
 		02402BC02AA220A300E9A851 /* studentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02402BBF2AA220A300E9A851 /* studentListCell.swift */; };
 		02402BC22AA221CC00E9A851 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02402BC12AA221CC00E9A851 /* StudentListViewController.swift */; };
 		02C8F4022AA0F2FD00F4A9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8F4012AA0F2FD00F4A9F4 /* AppDelegate.swift */; };
@@ -55,9 +52,6 @@
 		0213BA662AA257F600085027 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
 		0213BA682AA4DB9F00085027 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		0213BA6B2AA55D5B00085027 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
-		0213BA702AA75A0800085027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0213BA762AA75A4700085027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TrainingProject/Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		0213BA7A2AA75FA000085027 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		02402BBF2AA220A300E9A851 /* studentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentListCell.swift; sourceTree = "<group>"; };
 		02402BC12AA221CC00E9A851 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		02C8F3FE2AA0F2FD00F4A9F4 /* TrainingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,15 +133,12 @@
 				0213BA642AA257CC00085027 /* ProductsViewController.swift */,
 				0213BA662AA257F600085027 /* ProductsTableViewCell.swift */,
 				0213BA682AA4DB9F00085027 /* Products.swift */,
-				0213BA702AA75A0800085027 /* SettingsViewController.swift */,
-				0213BA7A2AA75FA000085027 /* SettingsTableViewCell.swift */,
 				02C8F40C2AA0F2FE00F4A9F4 /* LaunchScreen.storyboard */,
 				02C8F4072AA0F2FD00F4A9F4 /* Main.storyboard */,
 				02EF17472AA2469F00BB4905 /* HomeScreen.storyboard */,
 				02EF174A2AA246BB00BB4905 /* Calculator.storyboard */,
 				02EF174D2AA246DB00BB4905 /* StudentList.storyboard */,
 				02EF17502AA2489900BB4905 /* Products.storyboard */,
-				0213BA752AA75A4700085027 /* Settings.storyboard */,
 				02C8F40A2AA0F2FE00F4A9F4 /* Assets.xcassets */,
 				02C8F40F2AA0F2FE00F4A9F4 /* Info.plist */,
 				0213BA6B2AA55D5B00085027 /* Products.json */,
@@ -284,7 +275,6 @@
 				02EF174F2AA246DB00BB4905 /* StudentList.storyboard in Resources */,
 				02C8F4092AA0F2FD00F4A9F4 /* Main.storyboard in Resources */,
 				02EF17522AA2489900BB4905 /* Products.storyboard in Resources */,
-				0213BA772AA75A4700085027 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +301,6 @@
 			files = (
 				02402BC22AA221CC00E9A851 /* StudentListViewController.swift in Sources */,
 				02C8F4362AA1708700F4A9F4 /* CalculatorViewController.swift in Sources */,
-				0213BA7B2AA75FA000085027 /* SettingsTableViewCell.swift in Sources */,
-				0213BA712AA75A0800085027 /* SettingsViewController.swift in Sources */,
 				0213BA652AA257CC00085027 /* ProductsViewController.swift in Sources */,
 				0213BA672AA257F600085027 /* ProductsTableViewCell.swift in Sources */,
 				02402BC02AA220A300E9A851 /* studentListCell.swift in Sources */,
@@ -357,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0213BA752AA75A4700085027 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0213BA762AA75A4700085027 /* Base */,
-			);
-			name = Settings.storyboard;
-			sourceTree = "<group>";
-		};
 		02C8F4072AA0F2FD00F4A9F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

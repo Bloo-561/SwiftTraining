@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -110,7 +111,7 @@
                         <segue destination="UhN-w1-4nj" kind="relationship" relationship="viewControllers" id="SwW-Mi-bLA"/>
                         <segue destination="cNr-G2-IXp" kind="relationship" relationship="viewControllers" id="E5k-WM-zgj"/>
                         <segue destination="VXz-xV-hQi" kind="relationship" relationship="viewControllers" id="vwo-sD-eJD"/>
-                        <segue destination="Kob-W7-3SV" kind="relationship" relationship="viewControllers" id="wCc-p6-PWW"/>
+                        <segue destination="dOq-Tw-IdV" kind="relationship" relationship="viewControllers" id="wCc-p6-PWW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4q-ah-Pe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,19 +176,28 @@
             </objects>
             <point key="canvasLocation" x="2634" y="-162"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="f5Y-2h-PkL">
+        <!--Item-->
+        <scene sceneID="N3x-1H-xsg">
             <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="Kob-W7-3SV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bqi-dv-axt"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tmr-Pe-gxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23r-Ke-dc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="dOq-Tw-IdV" customClass="SettingsViewController" customModule="TrainingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8F-QB-FJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3v8-ka-ZSS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EZU-Jp-aBa"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="2631" y="249"/>
+            <point key="canvasLocation" x="2869" y="199"/>
         </scene>
     </scenes>
     <resources>
         <image name="circle.hexagonpath" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tableCellBlueTextColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
