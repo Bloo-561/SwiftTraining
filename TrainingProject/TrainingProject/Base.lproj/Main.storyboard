@@ -104,14 +104,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="e4j-f3-mqC" kind="relationship" relationship="viewControllers" id="Qp9-73-FBE"/>
-                        <segue destination="UhN-w1-4nj" kind="relationship" relationship="viewControllers" id="SwW-Mi-bLA"/>
-                        <segue destination="cNr-G2-IXp" kind="relationship" relationship="viewControllers" id="E5k-WM-zgj"/>
                         <segue destination="VXz-xV-hQi" kind="relationship" relationship="viewControllers" id="vwo-sD-eJD"/>
                         <segue destination="bFP-wG-7Z9" kind="relationship" relationship="viewControllers" id="7Jo-F2-MO4"/>
                         <segue destination="Kob-W7-3SV" kind="relationship" relationship="viewControllers" id="wCc-p6-PWW"/>
+                        <segue destination="UhN-w1-4nj" kind="relationship" relationship="viewControllers" id="SwW-Mi-bLA"/>
+                        <segue destination="cNr-G2-IXp" kind="relationship" relationship="viewControllers" id="E5k-WM-zgj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4q-ah-Pe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -140,7 +141,7 @@
         <scene sceneID="c9V-NF-FsG">
             <objects>
                 <viewControllerPlaceholder storyboardName="HomeScreen" id="e4j-f3-mqC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1wF-iA-0xM"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="1wF-iA-0xM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2Z-vI-hdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
