@@ -18,6 +18,8 @@
 		0213BA802AA790AD00085027 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA7F2AA790AD00085027 /* CountryTableViewCell.swift */; };
 		0213BA822AA790C600085027 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA812AA790C600085027 /* CountryViewController.swift */; };
 		0213BA842AA790F200085027 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA832AA790F200085027 /* Countries.swift */; };
+		0213BA862AA8ACA100085027 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA852AA8ACA100085027 /* NetworkProtocol.swift */; };
+		0213BA882AA8AE3D00085027 /* NetworkClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213BA872AA8AE3D00085027 /* NetworkClosure.swift */; };
 		02402BC02AA220A300E9A851 /* studentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02402BBF2AA220A300E9A851 /* studentListCell.swift */; };
 		02402BC22AA221CC00E9A851 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02402BC12AA221CC00E9A851 /* StudentListViewController.swift */; };
 		02C8F4022AA0F2FD00F4A9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8F4012AA0F2FD00F4A9F4 /* AppDelegate.swift */; };
@@ -66,6 +68,8 @@
 		0213BA7F2AA790AD00085027 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		0213BA812AA790C600085027 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		0213BA832AA790F200085027 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		0213BA852AA8ACA100085027 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		0213BA872AA8AE3D00085027 /* NetworkClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClosure.swift; sourceTree = "<group>"; };
 		02402BBF2AA220A300E9A851 /* studentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentListCell.swift; sourceTree = "<group>"; };
 		02402BC12AA221CC00E9A851 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		02C8F3FE2AA0F2FD00F4A9F4 /* TrainingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +154,8 @@
 				0213BA812AA790C600085027 /* CountryViewController.swift */,
 				0213BA7F2AA790AD00085027 /* CountryTableViewCell.swift */,
 				0213BA832AA790F200085027 /* Countries.swift */,
+				0213BA852AA8ACA100085027 /* NetworkProtocol.swift */,
+				0213BA872AA8AE3D00085027 /* NetworkClosure.swift */,
 				0213BA702AA75A0800085027 /* SettingsViewController.swift */,
 				0213BA7A2AA75FA000085027 /* SettingsTableViewCell.swift */,
 				02C8F40C2AA0F2FE00F4A9F4 /* LaunchScreen.storyboard */,
@@ -334,6 +340,8 @@
 				02C8F4062AA0F2FD00F4A9F4 /* ViewController.swift in Sources */,
 				0213BA692AA4DB9F00085027 /* Products.swift in Sources */,
 				0213BA822AA790C600085027 /* CountryViewController.swift in Sources */,
+				0213BA862AA8ACA100085027 /* NetworkProtocol.swift in Sources */,
+				0213BA882AA8AE3D00085027 /* NetworkClosure.swift in Sources */,
 				02C8F4022AA0F2FD00F4A9F4 /* AppDelegate.swift in Sources */,
 				0213BA842AA790F200085027 /* Countries.swift in Sources */,
 				02C8F4042AA0F2FD00F4A9F4 /* SceneDelegate.swift in Sources */,

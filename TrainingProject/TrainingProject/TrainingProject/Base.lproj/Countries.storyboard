@@ -32,16 +32,25 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eis-8Y-w0S">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="111.66666666666667"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-xU-V1j">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-xU-V1j">
                                                             <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-tU-3TW">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-tU-3TW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="261.66666666666669" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrt-Dt-FcT">
+                                                                    <rect key="frame" x="281.66666666666669" y="0.0" width="111.33333333333331" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Zrt-Dt-FcT" firstAttribute="leading" secondItem="OUK-tU-3TW" secondAttribute="trailing" constant="20" id="l1J-6H-X1S"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tzx-b1-5se">
                                                             <rect key="frame" x="0.0" y="30.333333333333336" width="393" height="20.333333333333336"/>
@@ -80,6 +89,8 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="eis-8Y-w0S" firstAttribute="leading" secondItem="tqa-Lu-86M" secondAttribute="leading" constant="10" id="Mlq-Mk-h9e"/>
+                                                <constraint firstAttribute="trailing" secondItem="eis-8Y-w0S" secondAttribute="trailing" constant="10" id="Wpc-5F-yPn"/>
                                                 <constraint firstItem="eis-8Y-w0S" firstAttribute="top" secondItem="tqa-Lu-86M" secondAttribute="top" id="Xpp-xp-O7E"/>
                                                 <constraint firstAttribute="bottom" secondItem="eis-8Y-w0S" secondAttribute="bottom" id="a6n-M3-2La"/>
                                                 <constraint firstItem="eis-8Y-w0S" firstAttribute="leading" secondItem="tqa-Lu-86M" secondAttribute="leading" id="fCl-Kq-chj"/>
@@ -91,15 +102,22 @@
                                             <outlet property="country" destination="OUK-tU-3TW" id="E3S-hl-Qzf"/>
                                             <outlet property="currency" destination="Wlq-vu-kgd" id="YjE-yf-15H"/>
                                             <outlet property="language" destination="D48-GG-0bV" id="s0g-nA-DlP"/>
+                                            <outlet property="region" destination="Zrt-Dt-FcT" id="xQg-An-k8i"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="I6R-wz-W89" id="Lap-lx-fQQ"/>
+                                    <outlet property="delegate" destination="I6R-wz-W89" id="Oqd-xW-cNI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TsX-Jf-57m"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
+                            <constraint firstItem="B19-lq-L9a" firstAttribute="trailing" secondItem="TsX-Jf-57m" secondAttribute="trailing" constant="10" id="BEe-DL-vTE"/>
                             <constraint firstItem="TsX-Jf-57m" firstAttribute="bottom" secondItem="B19-lq-L9a" secondAttribute="bottom" id="Tfb-yO-hei"/>
+                            <constraint firstItem="B19-lq-L9a" firstAttribute="leading" secondItem="TsX-Jf-57m" secondAttribute="leading" constant="10" id="d2U-am-t0S"/>
                             <constraint firstItem="TsX-Jf-57m" firstAttribute="trailing" secondItem="B19-lq-L9a" secondAttribute="trailing" id="lmh-n3-BT0"/>
                             <constraint firstItem="B19-lq-L9a" firstAttribute="leading" secondItem="TsX-Jf-57m" secondAttribute="leading" id="tmP-Ee-ijd"/>
                             <constraint firstItem="B19-lq-L9a" firstAttribute="top" secondItem="TsX-Jf-57m" secondAttribute="top" id="zYF-4P-L5m"/>
