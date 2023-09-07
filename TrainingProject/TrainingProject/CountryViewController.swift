@@ -12,13 +12,13 @@ protocol NetworkAction {
 }
 
 class CountryViewController: UIViewController, UITableViewDataSource, NetworkAction {
-     
+    
     @IBOutlet weak var tableView: UITableView!
     
     var countries : [Country]?
     let networkProtocol = NetworkProtocol()
     let networkClosure = NetworkClosure()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         networkClosure.getCountry { countries, error in
